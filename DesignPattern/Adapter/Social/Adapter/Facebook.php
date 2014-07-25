@@ -12,14 +12,14 @@ use DesignPattern\Adapter\Social\Api;
 class Facebook implements Writer
 {
     /**
-     * @var DesignPattern\Adapter\Social\Api\Facebook 
+     * @var \DesignPattern\Adapter\Social\Api\Facebook
      */
     private $facebook;
 
     /**
      * Constructor
      *
-     * @param  FacebookApi $fb
+     * @param  \DesignPattern\Adapter\Social\Api\Facebook $fb
      * @return void
      */
     public function __construct(Api\Facebook $fb)

@@ -12,7 +12,7 @@ use DesignPattern\Adapter\Social\Adapter\Writer;
 class Api implements Writer
 {
     /**
-     * @var \DesignPattern\Adapter\Social\Adapter\Writer;
+     * @var \DesignPattern\Adapter\Social\Adapter\Writer
      */
     private $adapter;
 

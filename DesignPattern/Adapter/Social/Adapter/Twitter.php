@@ -12,14 +12,14 @@ use DesignPattern\Adapter\Social\Api;
 class Twitter implements Writer
 {
     /**
-     * @var DesignPattern\Adapter\Social\Adapter\Twitter
+     * @var \DesignPattern\Adapter\Social\Api\Twitter
      */
     private $twitter;
 
     /**
      * Constructor
      *
-     * @param  Twitter $t
+     * @param  \DesignPattern\Adapter\Social\Api\Twitter $t
      * @return void
      */
     public function __construct(Api\Twitter $t)
