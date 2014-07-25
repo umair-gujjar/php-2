@@ -27,5 +27,8 @@ $twitter = new Api\Twitter();
 $twitterAdapter = new Adapter\Twitter($twitter);
 
 // Using API
-echo $api->setAdapter($facebookAdapter)->write("<p>Hello Facebook Adapter</p>");
-echo $api->setAdapter($twitterAdapter)->write("<p>Hello Twitter Adapter</p>");
+foreach([$facebookAdapter, $twitterAdapter] as $writer) {
+    echo $api->setAdapter($writer)->write(
+        sprintf('<p>%s: %s</p>', get_class($writer), 'Hey !')
+    );
+}
