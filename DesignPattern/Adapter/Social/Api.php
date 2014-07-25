@@ -22,7 +22,7 @@ class Api implements Writer
      * @param  \DesignPattern\Adapter\Social\Adapter\Writer $adapter
      * &return void
      */
-    public function __constructor(Writer $adapter = null)
+    public function __construct(Writer $adapter = null)
     {
         if (null !== $adapter) {
             $this->setAdapter($adapter);
