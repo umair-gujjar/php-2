@@ -12,8 +12,8 @@ require_once 'Adapter/Facebook.php';
 require_once 'Adapter/Twitter.php';
 require_once 'Api.php';
 
-use DesignPattern\Adapter\Social\Api;
-use DesignPattern\Adapter\Social\Adapter;
+use DesignPattern\Adapter\Social\Api,
+    DesignPattern\Adapter\Social\Adapter;
 
 // Simple social api
 $api = new Api();
