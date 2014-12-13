@@ -11,12 +11,12 @@ use DesignPattern\Singleton\Db\Connection;
 
 define('DB_DSN', 'mysql:host=localhost;dbname=demo');
 define('DB_USERNAME', 'foo');
-define('DB_PASSWORD', '******');
+define('DB_PASSWORD', 'secret');
 
 try {
     Connection::getInstance(DB_DSN, DB_USERNAME, DB_PASSWORD);
 } catch (\PDOException $e) {
-    exit('Error Connection');
+    exit($e->getMessage());
 }
 
 $db = Connection::getInstance()->getDb();
