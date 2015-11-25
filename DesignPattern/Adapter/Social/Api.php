@@ -20,7 +20,7 @@ class Api implements Writer
      * Constructor
      * 
      * @param  \DesignPattern\Adapter\Social\Adapter\Writer $adapter
-     * &return void
+     * @return void
      */
     public function __construct(Writer $adapter = null)
     {
